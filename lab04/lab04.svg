@@ -1,0 +1,170 @@
+<?xml version="1.0" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="940px" height="520px"
+    viewBox="0 0 400 400"
+    preserveAspectRatio="xMidYMid">
+    
+    <defs>
+
+        <!-- <g id="wheel" fill="white" stroke="black" transform="rotate(0)">
+
+            <animateTransform attributeName="transform"
+                attributeType="XML" type="rotate"
+                from="360" to="0" dur="3s"
+                fill="remove" repeatCount="indefinite"/>
+
+            <circle cx="0" cy="0" r="50"
+                />
+
+            <line x1 = "0" y1="50" x2 = "100" y2="50"
+                transform="translate(-50, -50)"/>
+            <line x1 = "50" y1="0" x2 = "50" y2="100"
+                transform="translate(-50, -50)"/>
+
+        </g> -->
+
+        <g id="polygonWheel" fill="white" stroke="black" transform="rotate(0)">
+
+            <animateTransform attributeName="transform"
+                attributeType="XML" type="rotate"
+                from="360" to="0" dur="3s"
+                fill="remove" repeatCount="indefinite"/>
+
+            <polygon transform="scale(0.5, 0.5)"
+                points=
+                    "0,0
+                    100,0
+                    93,34
+                    0,0
+                    93,34
+                    76,64
+                    0,0
+                    76,64
+                    50,86
+                    0,0
+                    50,86
+                    17,98
+                    0,0
+                    17,98
+                    -17,98
+                    0,0
+                    -17,98
+                    -49,86
+                    0,0
+                    -49,86
+                    -76,64
+                    0,0
+                    -76,64
+                    -93,34
+                    0,0
+                    -93,34
+                    -100,0
+                    0,0
+                    -100,0
+                    -93,-34
+                    0,0
+                    -93,-34
+                    -76,-64
+                    0,0
+                    -76,-64
+                    -50,-86
+                    0,0
+                    -50,-86
+                    -17,-98
+                    0,0
+                    -17,-98
+                    17,-98
+                    0,0
+                    17,-98
+                    50,-86
+                    0,0
+                    50,-86
+                    76,-64
+                    0,0
+                    76,-64
+                    93,-34
+                    0,0
+                    93,-34
+                    100,0"/>
+
+                <!-- 100, 93, 76, 50, 17, -17, -49, -76, -93, -100, -93, -76, -50, -17,  17,  50,  76,  93
+                0,   34, 64, 86, 98,  98,  86,  64,  34,    0, -34, -64, -86, -98, -98, -86, -64, -34] -->
+
+                <!-- "100,0
+                    93,34
+                    76,64
+                    50,86
+                    17,98
+                    -17,98
+                    -49,86
+                    -76,64
+                    -93,34
+                    -100,0
+                    -93,-34
+                    -76,-64
+                    -50,-86
+                    -17,-98
+                    -17,-98
+                    50,-86
+                    76,-64
+                    93,-34" -->
+
+        </g>
+
+        <g id="bar">
+
+            <rect x="0" y="0"
+                width="100" height="100"
+                transform="translate(-105, -9) scale(2.60, 0.18)"
+                fill="red"/>
+
+                <!-- opacity="0.5"  -->
+
+        </g>
+
+        <g id="triangle">
+
+            <polygon points="0,100 100,100 50,0"
+                transform="scale(0.5, 1.75)"/>
+
+        </g>
+
+        <g id="windmill">
+
+            <g>
+                <use xlink:href="#polygonWheel" transform="translate(-103, -17)"/>
+                <use xlink:href="#polygonWheel" transform="translate(152, 27)"/>
+
+                <use xlink:href="#bar" transform="rotate(10)"/>
+
+                <use xlink:href="#triangle"/>
+            </g>
+
+        </g>
+
+        <g id="guideLines">
+
+            <line x1 ="0" y1="0" x2 ="400" y2="0" stroke="black"/>
+            <line x1 ="0" y1="0" x2 ="0" y2="400" stroke="black"/>
+            <line x1 ="400" y1="0" x2 ="400" y2="400" stroke="black"/>
+            <line x1 ="0" y1="400" x2 ="400" y2="400" stroke="black"/>
+
+            <line x1="0" y1="0" x2="400" y2="400" stroke="red"/>
+            <line x1="0" y1="400" x2="400" y2="0" stroke="red"/>
+
+        </g>
+
+    </defs>
+
+    <!-- <use xlink:href="#guideLines" /> -->
+
+    <use xlink:href="#windmill" fill="purple" transform="translate(93.75, 82.5) scale(0.6, 0.6)"/>
+
+    <use xlink:href="#windmill" fill="green" transform="translate(281.25, 54.3) scale(0.4, 0.4)"/>
+
+    <use xlink:href="#windmill" fill="blue" transform="translate(220, 250) scale(0.8, 0.8)"/>
+
+</svg>
