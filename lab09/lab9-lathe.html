@@ -61,24 +61,6 @@ async function createWorld() {
         new THREE.Vector2(18, 2),
     ]);
 
-    // const curve = new THREE.SplineCurve(
-	// [
-
-	// new THREE.Vector2(8,-15),
-	// new THREE.Vector2(8-13),
-	// new THREE.Vector2(6,-11),
-	// new THREE.Vector2(3,-9),
-	// new THREE.Vector2(3,-1),
-	// new THREE.Vector2(6,-1),
-	// new THREE.Vector2(5,1),
-	// new THREE.Vector2(3,2),
-	// new THREE.Vector2(4,4),
-	// new THREE.Vector2(2,5),
-	// new THREE.Vector2(2,7)
-	
-	// ]
-	// );
-
     const points = curve.getPoints(200);
 
     const geometry = new THREE.LatheGeometry(points, 200);
